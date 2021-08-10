@@ -7,7 +7,6 @@ import { ScrollView } from "react-native";
 import { NativeBaseProvider } from "native-base";
 import { loadInitialProducts } from "../actions/index";
 import ProductItems from "./ProductItems";
-import { SafeAreaView } from "react-native";
 
 class ProductList extends Component {
   static navigationOptions = {

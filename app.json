@@ -1,23 +1,29 @@
 {
   "expo": {
     "name": "Stockrecorder",
+    "description": "Expo app use for stock record",
     "slug": "Stockrecorder",
+    "sdkVersion": "39.0.0",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/5453183.png",
+    "privacy": "public",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/5453183.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
     },
     "android": {
+      "package": "com.bamtak.stockrecorder",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
@@ -26,6 +32,7 @@
     "web": {
       "favicon": "./assets/favicon.png",
       "name": "Stockrecorder"
-    }
+    },
+    "githubUrl": "https://github.com/Abdulgafar4/rtlfrontend"
   }
 }
