@@ -19,23 +19,9 @@ export default function ImageUpload({ image, setImage }) {
       } else if (response.error) {
         console.log("ImagePicker Error: ", response.error);
       } else {
-        cloudinaryUpload(response.uri);
+        setImage(response.uri);
       }
     });
-  };
-  const cloudinaryUpload = (photo) => {
-    const url = "https://api.cloudinary.com/v1_1/abdulgafar4/image/upload";
-    const data = new FormData();
-    data.append("file", photo);
-    data.append("upload_preset", "abdulgafar");
-    fetch(url, {
-      method: "post",
-      body: data,
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        setImage(data.secure_url);
-      });
   };
 
   return (
