@@ -22,7 +22,7 @@ const allstyles = StyleSheet.create({
   },
   image: {
     height: 200,
-    width: Platform.OS === "android" ? windowWidth : 490,
+    width: 490,
     backgroundColor: "transparent",
   },
   closeIcon: {

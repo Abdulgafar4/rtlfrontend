@@ -3,10 +3,11 @@
     "name": "Stockrecorder",
     "description": "Expo app use for stock record",
     "slug": "Stockrecorder",
-    "sdkVersion": "39.0.0",
     "version": "1.0.0",
     "orientation": "portrait",
-    "platforms": ["ios", "android"],
+    "platforms": [
+      "android"
+    ],
     "icon": "./assets/5453183.png",
     "privacy": "public",
     "splash": {
@@ -17,13 +18,15 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.bamtak.stockrecorder"
+      "bundleIdentifier": "com.abdulgafar.stockrecorder"
     },
     "android": {
-      "package": "com.bamtak.stockrecorder"
+      "package": "com.abdulgafar.stockrecorder"
     },
     "web": {
       "favicon": "./assets/favicon.png",

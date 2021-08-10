@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, FlatList } from "react-native";
+import { View } from "react-native";
 import { connect } from "react-redux";
 import { Octicons } from "@expo/vector-icons";
 import ProductsDetails from "./ProductsDetails";
@@ -24,13 +24,9 @@ class ProductList extends Component {
     if (this.props.detailView === true) {
       return <ProductsDetails />;
     } else {
-      return (
-        <FlatList
-          data={this.props.product}
-          renderItem={({ item }) => <ProductItems product={item} />}
-          keyExtractor={(item, index) => index.toString()}
-        />
-      );
+      return this.props.product.map((item, key) => (
+        <ProductItems product={item} key={key} />
+      ));
     }
   }
 

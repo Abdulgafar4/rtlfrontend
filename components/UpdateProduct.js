@@ -18,9 +18,6 @@ import {
 } from "native-base";
 import allstyles from "../styles";
 import { withNavigation } from "react-navigation";
-import ImageCamera from "./openCamera";
-import ImageUpload from "./ImgPicker";
-import { Image } from "react-native";
 
 const styles = StyleSheet.create({
   form: {
@@ -186,7 +183,7 @@ class UpdateProducts extends Component {
                     fontWeight: 600,
                   }}
                 >
-                  unit
+                  Unit
                 </FormControl.Label>
                 <Input
                   type="text"
@@ -204,7 +201,7 @@ class UpdateProducts extends Component {
                     fontWeight: 600,
                   }}
                 >
-                  tag
+                  Tag
                 </FormControl.Label>
                 <Input
                   type="text"
@@ -233,24 +230,6 @@ class UpdateProducts extends Component {
                   }
                 />
               </Stack>
-              {/* {this.props.productImage ? (
-                <Image
-                  source={{ uri: this.props.productImage }}
-                  style={styles.thumbnail}
-                />
-              ) : null}
-              <ImageCamera
-                image={this.props.productImage}
-                setImage={(value) =>
-                  this.props.formUpdate({ prop: "productImage", value })
-                }
-              />
-              <ImageUpload
-                image={this.props.productImage}
-                setImage={(value) =>
-                  this.props.formUpdate({ prop: "productImage", value })
-                }
-              /> */}
               <VStack space={2} mt={5}>
                 <Button
                   colorScheme="cyan"

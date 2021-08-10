@@ -183,7 +183,7 @@ class AddProducts extends Component {
                     fontWeight: 600,
                   }}
                 >
-                  unit
+                  Unit
                 </FormControl.Label>
                 <Input
                   type="text"
@@ -202,7 +202,7 @@ class AddProducts extends Component {
                     fontWeight: 600,
                   }}
                 >
-                  tag
+                  Tag
                 </FormControl.Label>
                 <Input
                   type="text"
@@ -231,12 +231,14 @@ class AddProducts extends Component {
                   }
                 />
               </Stack>
-              {this.props.productImage ? (
-                <Image
-                  source={{ uri: this.props.productImage }}
-                  style={styles.thumbnail}
-                />
-              ) : null}
+              <Center>
+                {this.props.productImage ? (
+                  <Image
+                    source={{ uri: this.props.productImage }}
+                    style={styles.thumbnail}
+                  />
+                ) : null}
+              </Center>
               <ImageCamera
                 image={this.props.productImage}
                 setImage={(value) =>
